@@ -89,11 +89,13 @@ footer {
 form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     padding-left: 40px;
+    width: 30vw;
+
 }
 
 legend {
+    margin: 20px 0 20px 0;
     font-size: 24px;
     font-weight: 600;
 }
@@ -102,8 +104,40 @@ legend {
     display: flex;
     flex-direction: column;
     height: 30vh;
-    justify-content:space-around;
+    width: 24vw;
 }
+
+.name, .email-phone, .pass {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif
+}
+
+label  {
+    display: block;
+}
+
+input {
+    width: 10vw;
+    border-radius: 4px;
+    border: 1px solid rgb(102, 102, 102, 0.2);
+    height: 20px;
+    padding: 4px 4px 4px 8px;
+    
+}
+
+input[type="text"]:focus, 
+input[type='email']:focus,
+input[type='tel']:focus,
+input[type='password']:focus,
+input[type='confirm-password']:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #94bdd3;
+    border:1px solid #0071aa;
+}
+
 .account-section {
     display: flex;
     flex-direction: column;
